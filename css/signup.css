@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    background: rgb(134, 254, 134);
+}
+.wrapper{
+    background-image: radial-gradient(closest-side, rgb(250, 228, 137),#ffffff);
+    background-position-x:9rem;
+    background-position-y:7 rem;
+    /* background: 
+    linear-gradient(rgba(255, 255, 255, 0.973),transparent),
+    linear-gradient(to bottom left , rgba(255, 233, 120, 0.973),transparent),
+    linear-gradient(to top left , rgba(255, 233, 120, 0.973),transparent),
+    linear-gradient(to top right , rgba(255, 233, 120, 0.973),transparent);
+    background-blend-mode:screen; */
+    /* height: 100vh; */
+    width: 360px;
+}
+.first{
+    margin: 7px;
+    padding: 3px;
+    
+}
+#arr{
+    margin-top: 70px;
+}
+.form-field{
+    height: 40px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* margin: 5px; */
+}
+.input{
+    position: relative;
+    display: flex;
+    
+}
+input[type = text]{
+    margin: 12px;
+    padding: 
+    25px;
+}
+.logo{
+    position: absolute;
+    top: 32px;
+    right: 309px;
+    height: 12px;
+}
+#hiddenOne , #hiddenTwo{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 33px;
+    left: 290px;
+}
+.signin{
+    cursor: pointer;
+    width:60%;
+    height: 50px;
+    background:#f4f071;
+    border-radius: 10px;
+    position: relative;
+    left: 60px;
+    margin: 15px;
+    box-shadow:10px 10px 213px 0px rgba(0, 0, 0, 0.75);
+}
+.si{
+    margin: 2px;
+    padding: 5px;
+}
+#sin{
+    font-weight: 500;
+    position: relative;
+    top: 7px;
+    left: 75px;
+    padding: 2px;
+    color: orangered;
+
+}
+.arr{
+    position: relative;
+    left: 175px;
+    bottom: 15px;
+    height: 20px;
+    background: orangered;
+    border-radius: 10px;
+    width: 20px;
+    padding: 2px;
+
+
+}
+#arrow{
+    height:12 px ;
+    width: 12px;
+    position: relative;
+    left: 3px;
+    padding: 2px;
+
+}
+.or{
+    height: 40px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 200;
+    opacity: 0.5;
+
+}
+.login{
+    cursor: pointer;
+     height: 40px;
+     width: 60%;
+     background: white;
+     border-radius: 10px;
+     position: relative;
+     left: 70px;
+     display: flex;
+     justify-content: space-evenly;
+     padding: 6px;
+     margin: 9px;
+}
+#go{
+    font-weight: 800;
+    padding: 5px;
+    position: relative;
+    left: -14px;
+}
+#google{
+    height: 24px;
+}
+#fb{
+    font-weight: 800;
+    padding: 2px;
+    
+}
+.facebook{
+    cursor: pointer;
+    height: 40px;
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    left: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 9px;
+    margin: 9px;
+}
+#facebook{
+   height: 25px;
+}
+.last{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 90px;
+    height: 40px;
+    margin: 10px;
+    padding: 2px;
+    font-size: 14px;
+}
+#sup{
+    color: orangered;
+}
+@media (width>360px){
+    .container{
+        height: auto;
+    }
+}

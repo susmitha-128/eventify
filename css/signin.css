@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box  ;
+}
+body{
+    background: rgb(134, 172, 168);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+}
+.wrapper{
+    top: 0;
+    width: 360px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: 200px;
+    background: radial-gradient(closest-side,rgb(255, 225, 104),#ffff);
+    z-index: 200;
+    background-position-x:8rem;
+    background-position-y: 7rem;
+}
+
+    .wrapper.display-none{
+        opacity: 0;
+        top: 0;
+        width: 360px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-size: 200px;
+        background: radial-gradient(closest-side,rgb(255, 225, 104),#ffff);
+        z-index: -10;
+        background-position-x:8rem;
+        background-position-y: 7rem;
+    }
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+.container{
+    position: relative;
+    background-image: radial-gradient(closest-side, rgb(250, 228, 137),#ffffff);
+    background-position-x:-7rem;
+    background-position-y: rem;
+    height: 100vh;
+    width: 360px;
+    /* height: 740px; */
+    /* background:white; */
+    /* background: 
+    linear-gradient(rgba(255, 255, 255, 0.973),transparent),
+    linear-gradient(to bottom left , rgba(255, 233, 120, 0.973),transparent),
+    linear-gradient(to top left , rgba(255, 233, 120, 0.973),transparent),
+    linear-gradient(to top right , rgba(255, 233, 120, 0.973),transparent);
+    background-blend-mode:screen; */
+    
+}
+.head{
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    /* background: blue; */
+}
+#lophoto{
+    width: 80px;
+    height: 70px;
+    /* background: black; */
+    border-radius: 10px;
+}
+.content{
+    margin: 10px;
+    padding: 20px;
+    height: 300px;
+    z-index: 2;
+}
+.heading{
+    height: 30px;
+    margin: 20px;
+}
+.sign{
+   padding: 5px;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.first{
+    border-radius: 10px;
+    border: 2px solid ;
+    height: 40px;
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    padding: 5px;
+}
+#msg{
+    padding: 5px;
+}
+#Username{
+    padding: 10px;
+    color: gray;
+}
+.second{
+    border-radius: 10px;
+    border: 2px solid ;
+    height: 40px;
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    padding: 5px;
+}
+#lock{
+    padding: 5px;
+}
+#password{
+    padding: 5px;
+    color: grey;
+
+}
+.btab{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 90%;
+    cursor: pointer;
+}
+.button{
+    cursor: pointer;
+    display: flex;
+}
+#btn{
+    border: 2px solid orange;
+    height: 17px;
+    border-radius: 10px;
+    width: 25px;
+}
+#black{
+    height: 14px;
+    width: 12px;
+    background: black;
+    border-radius: 50%;
+}
+#rem{
+    position: relative;
+    left: 10px;
+}
+.signin{
+    cursor: pointer;
+    width:60%;
+    height: 50px;
+    background:#f4f071;
+    border-radius: 10px;
+    position: relative;
+    left: 60px;
+    margin: 10px;
+    box-shadow:10px 10px 213px 0px rgba(0, 0, 0, 0.75);
+}
+.si{
+    margin: 2px;
+    padding: 5px;
+}
+#sin{
+    font-weight: 500;
+    position: relative;
+    top: 7px;
+    left: 75px;
+    padding: 2px;
+    color: orangered;
+
+}
+.arr{
+    position: relative;
+    left: 175px;
+    bottom: 15px;
+    height: 20px;
+    background: orangered;
+    border-radius: 10px;
+    width: 20px;
+    padding: 2px;
+
+
+}
+#arrow{
+    height:12 px ;
+    width: 12px;
+    position: relative;
+    left: 3px;
+    padding: 2px;
+
+}
+.or{
+    height: 40px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 200;
+    opacity: 0.5;
+
+}
+.login{
+    cursor: pointer;
+     height: 40px;
+     width: 60%;
+     background: white;
+     border-radius: 10px;
+     position: relative;
+     left: 70px;
+     display: flex;
+     justify-content: space-evenly;
+     padding: 6px;
+     margin: 9px;
+}
+#go{
+    font-weight: 800;
+    padding: 5px;
+    position: relative;
+    left: -14px;
+}
+#google{
+    height: 24px;
+}
+#fb{
+    font-weight: 800;
+    padding: 2px;
+    
+}
+.facebook{
+    cursor: pointer;
+    height: 40px;
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    left: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 9px;
+    margin: 9px;
+}
+#facebook{
+   height: 25px;
+}
+.last{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 90px;
+    height: 40px;
+    margin: 10px;
+    padding: 2px;
+    font-size: 14px;
+}
+#sup{
+    color: orangered;
+}
+@media (width>360px){
+    .container{
+        height: 100%;
+    }
+}
